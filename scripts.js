@@ -29,7 +29,7 @@ function generateSpeakers()
     
                     conferenceYear.innerHTML += 
                     `
-                        <p>${name} | ${homeTown} | ${memberOf}</p>
+                        <p>${name}, ${homeTown} (${memberOf})</p>
                     `
     
             }
