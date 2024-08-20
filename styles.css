@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #0a0909;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.intro {
+    color: whitesmoke;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+
+.intro-subtitle {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.section-header {
+    padding-top: 5.34rem;
+}
+
+.section-title {
+    margin: 0;
+    padding: 2em;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em 2em 2em;
+    color: #0a0909;
+    gap: 1.5em;
+}
+
+aside a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: .5em;
+    transform: scale(1);
+    transition: 500ms;
+}
+
+aside a:hover,
+aside a:focus {
+    padding: .75em .5em;
+    background-color: #0a0909;
+    border-bottom: 1px solid whitesmoke;
+}
+
+p.aside-title {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #0a0909;
+}
+
+aside .about-more-info {
+    background-color: #0a0909cb;
+}
+
+aside .about-contacts {
+    color: #0a0909;
+}
+
+aside p {
+    margin: 0 0 .5em 0;
+}
+
+/* Layout */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: flex-end;
+    padding: 1.5em;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #0a0909cb;
+}
+
+.logo {
+    color: whitesmoke;
+    margin-right: 1em;
+}
+
+.logo-title,
+.logo-subtitle {
+    margin: 0;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    letter-spacing: .08em;
+}
+
+.logo-subtitle {
+    font-size: .8em;
+    letter-spacing: 1em;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./grizzly_forest_bg.jpg");
+    background-size: cover;
+    text-shadow: 2px 2px 10px #443E27;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+nav span {
+    display: inline-block;
+    font-size: 1.15rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus {
+    border-bottom: 3px solid whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    color: whitesmoke;
+    background-color: rgb(10, 9, 9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+    line-height: 1.25em;
+}
+
+.about-content-main {
+    width: 65%;
+}
+
+/* Buttons */
+
+a.btn {
+    display: inline-block;
+    margin-right: .75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .75em 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: #0a0909cb;
+    border: 1px solid #0a0909;
+    letter-spacing: 1.125px;
+    text-shadow: none;
+    transform: scale(1);
+    transition: 500ms;
+}
+
+a.btn-register {
+    background-color: #f5f5f5cb;
+    border: 1px solid #0a0909;
+    color: #0a0909;
+}
+
+a.btn:hover,
+a.btn:focus {
+    transform: scale(1.075);
+}
+
+.past-speaker-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.conference-year-container {
+    width: 25vw;
+    min-width: 220px;
+    padding-left: 1em;
+}
+
+.conference-year-container h1 {
+    color: #0a0909cb;
+    margin: 0;
+    padding: .5em 0;
+    font-size: 1.15rem;
+    font-weight: 300;
+    border-bottom: .5em solid #0a0909;
+    margin-bottom: 1.5em
+}
+
+.conference-year-container p {
+    margin: 0 0 .5em 0;
+}
+
+/* .phone-number {
+    float: right;
+} */
